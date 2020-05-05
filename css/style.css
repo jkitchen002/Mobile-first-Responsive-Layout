@@ -3,7 +3,7 @@
   }
   
   body {
-    font-family: 'Raleway', sans-serif;
+    font-family: 'Nunito', sans-serif;
     color: slateblue;
   }
   
@@ -27,6 +27,11 @@
   .main-header .nav li{
     list-style: none;
     padding: .5em;
+  }
+  
+  .main-header .nav{
+    padding: 0;
+
   }
 
   .main-header{
@@ -190,6 +195,7 @@ media query 1024p
 
     .me{
         float: left;
+        padding-left: 1.5em;
     }
 
     .main-header .nav{
