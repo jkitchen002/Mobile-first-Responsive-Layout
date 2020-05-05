@@ -9,7 +9,10 @@
   
   img {
     max-width: 100%;
-  }
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    }
     
   a {
     text-decoration: none;
@@ -23,93 +26,71 @@
   
   .main-header .nav li{
     list-style: none;
+    padding: .5em;
   }
 
   .main-header{
       background-color: #ffffe4;
       border-bottom: slategrey 1px solid;
+      text-align: center;
+      margin-bottom: 1em;     
+  }
+
+  h2, 
+  h3{
+      text-align: center;
+  }
+
+  p{
+    text-align: center;
   }
 
   .treehouse {
     color: #5fcf80;
   }
-       
-  #contact {
-      margin-top: 3em;
+
+  li{
+      list-style: none;
   }
+
+  .learnt{
+      width: 33%;
+  }
+
+#skills li{
+    list-style: none;
+    float: left;
+    width:33%;
+}
+
+#contact{
+    text-align: center;
+    padding-top: 3em;
+}
+
+.close .me{
+    float: left;
+}
+
+.close .top{
+   float: right;
+   display:inline-block;
+   margin-top: 1em;
+}
+
+.close .top{
+    font-size: 1em;
+    margin-left: 1em;
+}
+
+.close .link {
+    display: none;
+}
 
   .close{
       border-top: 1px slategrey solid;
   }
  
-  .close .nav li{
-    list-style: none;
-  }
-/* ======================
-media query 320px
-========================= */
-
-@media(min-width:320px) {
-
-    #main-container{
-        width:100%;
-        max-width: 1000px;
-        margin: 1px auto;
-    }
-
-    .main-header{
-        text-align: center;
-    }
-
-    img{
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
-    }
-
-    #main-container{
-        text-align: center;
-    }
-
-   .learnt{
-        width:33%;
-    }
-
-    #skills li{
-        list-style: none;
-        float: left;
-        width:33%;
-    }
-
-    #contact{
-        text-align: center;
-        padding-top: 3em;
-    }
-    
-    .close .me a{
-        display: inline-block;
-    }
-
-    .close .me{
-        float: left;
-    }
-
-    .close .top{
-       float: right;
-       display:inline-block;
-       margin-top: 1em;
-    }
-
-    .close .top{
-        font-size: 1em;
-        margin-left: 1em;
-    }
-
-    .close .link {
-        display: none;
-    }
-}
-
 /* ==================
 media query 768px
 =============================== */
@@ -137,12 +118,16 @@ media query 768px
         margin: 0;
     }
 
-    .nav{
-        text-align: center;
+    a{
+        padding: 1em;
     }
 
     .profile{
         float: right;
+    }
+
+    .about p{
+        text-align: left;
     }
 
     h2{
@@ -156,17 +141,12 @@ media query 768px
         padding: .25em;
     }
 
-    .project h3 {
-        text-align: center;
+    .skills{
+        padding-top: 0;
     }
 
-    .project p {
-        text-align: center;
-    }
-
-      #contact{
-        text-align: center;
-        padding-top: .5em;
+    #contact h2{
+        padding-top: 1.5em;
     }
 
     .close .link{
@@ -177,13 +157,18 @@ media query 768px
     .close .link{
         font-size: 1em;
         margin-left: 1em;
-        margin-top: 2.5em;
+        margin-top: 1.25em;
     }
 
     .close .top {
         display: none;
     }
 
+    .clear-fix::after{
+        content: "";
+        display: table;
+        clear:both;
+    }
 }
 
 /* ==================
@@ -198,7 +183,7 @@ media query 1024p
     }
 
     .main-header{
-        width:90%;
+        width:100%;
         margin:0 auto;
         padding-bottom: 8em;
     }
@@ -207,9 +192,9 @@ media query 1024p
         float: left;
     }
 
-    .main-header .nav li{
+    .main-header .nav{
         float: right;
-        padding-top: 70px;
+        padding-top: 10px;
         font-size: 1.5em;
     }
 
@@ -222,16 +207,15 @@ media query 1024p
         width: 33%;
     }
 
-    .skills h2{
-        text-align: center;
+    .skills{
         padding-top: 0;
     }
 
     #contact h2{
-        padding-top: 0;
+        padding-top: 5em;
     }
 
-    #skills::after{
+    .clear-fix::after{
         content: "";
         display: table;
         clear:both;
