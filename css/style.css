@@ -1,0 +1,239 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Raleway', sans-serif;
+    color: slateblue;
+  }
+  
+  img {
+    max-width: 100%;
+  }
+    
+  a {
+    text-decoration: none;
+    color: rebeccapurple;
+  }
+  
+  a:hover {
+    color: purple;
+    text-decoration: underline;
+  }
+  
+  .main-header .nav li{
+    list-style: none;
+  }
+
+  .main-header{
+      background-color: #ffffe4;
+      border-bottom: slategrey 1px solid;
+  }
+
+  .treehouse {
+    color: #5fcf80;
+  }
+       
+  #contact {
+      margin-top: 3em;
+  }
+
+  .close{
+      border-top: 1px slategrey solid;
+  }
+ 
+  .close .nav li{
+    list-style: none;
+  }
+/* ======================
+media query 320px
+========================= */
+
+@media(min-width:320px) {
+
+    #main-container{
+        width:100%;
+        max-width: 1000px;
+        margin: 1px auto;
+    }
+
+    .main-header{
+        text-align: center;
+    }
+
+    img{
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    #main-container{
+        text-align: center;
+    }
+
+   .learnt{
+        width:33%;
+    }
+
+    #skills li{
+        list-style: none;
+        float: left;
+        width:33%;
+    }
+
+    #contact{
+        text-align: center;
+        padding-top: 3em;
+    }
+    
+    .close .me a{
+        display: inline-block;
+    }
+
+    .close .me{
+        float: left;
+    }
+
+    .close .top{
+       float: right;
+       display:inline-block;
+       margin-top: 1em;
+    }
+
+    .close .top{
+        font-size: 1em;
+        margin-left: 1em;
+    }
+
+    .close .link {
+        display: none;
+    }
+}
+
+/* ==================
+media query 768px
+=============================== */
+   
+@media(min-width:768px){
+
+    #main-container{
+        width:90%;
+        max-width: 900px;
+        margin: 0 auto;
+    }
+
+    .main-header{
+        margin-bottom: 3em;
+    }
+
+    .me{
+        text-align: center;
+        padding-top: 1em;
+    }
+
+    .main-header .nav li{
+        display: inline-block;
+        padding-left: 1em;
+        margin: 0;
+    }
+
+    .nav{
+        text-align: center;
+    }
+
+    .profile{
+        float: right;
+    }
+
+    h2{
+        padding-top: 6em;
+        text-align: center;
+    }
+
+    .project{
+        float:left;
+        width:50%;
+        padding: .25em;
+    }
+
+    .project h3 {
+        text-align: center;
+    }
+
+    .project p {
+        text-align: center;
+    }
+
+      #contact{
+        text-align: center;
+        padding-top: .5em;
+    }
+
+    .close .link{
+        display:inline-block;
+        float: right;  
+    }
+
+    .close .link{
+        font-size: 1em;
+        margin-left: 1em;
+        margin-top: 2.5em;
+    }
+
+    .close .top {
+        display: none;
+    }
+
+}
+
+/* ==================
+media query 1024p
+=============================== */
+
+@media(min-width:1024px){
+
+    #main-container{
+        width:80%;
+        margin: 0 auto;
+    }
+
+    .main-header{
+        width:90%;
+        margin:0 auto;
+        padding-bottom: 8em;
+    }
+
+    .me{
+        float: left;
+    }
+
+    .main-header .nav li{
+        float: right;
+        padding-top: 70px;
+        font-size: 1.5em;
+    }
+
+    #portfolio{
+        margin-top: 2em;
+    }
+
+    .project{
+        float: left;
+        width: 33%;
+    }
+
+    .skills h2{
+        text-align: center;
+        padding-top: 0;
+    }
+
+    #contact h2{
+        padding-top: 0;
+    }
+
+    #skills::after{
+        content: "";
+        display: table;
+        clear:both;
+    }    
+}
