@@ -142,8 +142,9 @@ media query 768px
 
     .project{
         float:left;
-        width:50%;
+        width: 50%;
         padding: .25em;
+        min-height: 2em;
     }
 
     .skills{
@@ -174,6 +175,8 @@ media query 768px
         display: table;
         clear:both;
     }
+    .me{
+        padding: 10px;
 }
 
 /* ==================
@@ -210,7 +213,8 @@ media query 1024p
 
     .project{
         float: left;
-        width: 33%;
+        width: calc(33.333% - 20px);
+        min-height: 2em;
     }
 
     .skills{
