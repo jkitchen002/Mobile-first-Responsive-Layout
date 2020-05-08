@@ -3,7 +3,7 @@
   }
   
   body {
-    font-family: 'Dancing Script', cursive;
+    font-family: 'Roboto', sans-serif;
     color: slateblue;
   }
   
@@ -213,7 +213,7 @@ media query 1024p
 
     .project{
         float: left;
-        width: calc(33.333% - 20px);
+        width: calc(31.1% - 20px);
         min-height: 2em;
     }
 
@@ -222,7 +222,7 @@ media query 1024p
     }
 
     #contact h2{
-        padding-top: 5em;
+        padding-top: 3em;
     }
 
     .clear-fix::after{
